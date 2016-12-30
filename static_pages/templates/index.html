@@ -11,18 +11,38 @@
 {% endfor %}
 <!-- /ABOUT -->
   <div class="container">
-    <h1 class="display-3 text-xs-center">Sneaky Cr0w</h1>
-    <hr>
-    <div class="col-sm-3">
-
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="display-3 text-xs-center">Sneaky Cr0w</h1>
+        <hr>
+      </div>
     </div>
-    <div class="col-sm-5"></div>
-    <div class="col-sm-4"></div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="http://placeskull.com/350/180/38e0cc/1" class="card-img-top img-fluid">
+          <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lacus rutrum, sodales urna vel, sodales justo.</p>
+          </div>
+          <div class="card-block">
+            <ul class="nav nav-inline social-icons">
+              <li class="nav-item"><a href="{{ ada.github }}" class="nav-link"><i class="fa fa-github"></i></a></li>
+              <li class="nav-item"><a href="{{ ada.twitter }}" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lacus rutrum, sodales urna vel, sodales justo. Nulla semper velit eu fermentum gravida. Nulla viverra lacus turpis, sit amet sodales arcu ornare vitae. Nullam eget mauris pulvinar tellus tincidunt semper eu ultrices ipsum. Nam nec est sed purus efficitur placerat vel non sapien. Fusce quis arcu fringilla, faucibus urna in, tincidunt est. Suspendisse vulputate nisi blandit, blandit nunc vitae, dignissim lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque nibh erat, luctus sit amet faucibus ac, condimentum et augue. Nullam tristique pharetra enim finibus ornare. Suspendisse eleifend urna sit amet dui mollis feugiat vitae eu orci. Mauris finibus metus sed ante iaculis, consectetur fermentum eros molestie. Nunc non commodo nisi, a dictum lorem. Donec tincidunt id ligula vitae tempor. Vivamus arcu lectus, dignissim et neque iaculis, suscipit euismod velit. Phasellus sit amet malesuada risus. Etiam lectus neque, mattis sit amet metus vel, tincidunt tincidunt neque. Donec non ante interdum, sagittis ex id, tincidunt metus. Aliquam sit amet purus accumsan</p>
+      </div>
+    </div>
   </div>
 <!-- PROJECTS -->
   <div class="container">
-    <h1 class="display-4">Projects</h1>
-    <hr>
+    <div class="row">
+      <h1 class="display-4">Projects</h1>
+      <hr>
+    </div>
     {% for project in projects %}
     <div class="row">
       <div class="col-md-9">

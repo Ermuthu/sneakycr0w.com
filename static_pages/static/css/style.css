@@ -1,4 +1,17 @@
-.input-group {
-  margin-bottom: 15px; }
+.social-icons li a {
+  color: white; }
+  .social-icons li a i {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #40d63d;
+    margin-right: 10px;
+    padding-top: 15%; }
+    .social-icons li a i.fa-twitter {
+      background-color: #00aced; }
+    .social-icons li a i.fa-github {
+      background-color: #778899; }
 
 /*# sourceMappingURL=style.css.map */
