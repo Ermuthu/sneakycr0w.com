@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- ABOUT -->
+{% for ada in ada %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+{% endfor %}
+<!-- /ABOUT -->
+  <div class="container">
+    <h1 class="display-3 text-xs-center">Sneaky Cr0w</h1>
+    <hr>
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-5"></div>
+    <div class="col-sm-4"></div>
+  </div>
+<!-- PROJECTS -->
+  <div class="container">
+    <h1 class="display-4">Projects</h1>
+    <hr>
+    {% for project in projects %}
+    <div class="row">
+      <div class="col-md-9">
+        <img src="{{ project.image_url }}" alt="">
+      </div>
+      <div class="col-md-3">
+        <h1>{{ project.title }}</h1>
+        <p>{{ project.desc }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+<!-- /PROJECTS -->
+{% endblock %}
