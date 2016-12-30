@@ -14,4 +14,10 @@
     .social-icons li a i.fa-github {
       background-color: #778899; }
 
+.project-image {
+  opacity: 0.7;
+  transition: opacity .25s ease-in-out; }
+  .project-image:hover {
+    opacity: 1.0; }
+
 /*# sourceMappingURL=style.css.map */
