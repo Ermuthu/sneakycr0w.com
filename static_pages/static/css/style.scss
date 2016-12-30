@@ -21,3 +21,10 @@
     }
   }
 }
+.project-image {
+  opacity: 0.4;
+  transition: opaicty 2s;
+  &:hover {
+    opacity: 1.0;
+  }
+}
