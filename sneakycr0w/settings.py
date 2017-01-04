@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'widget_tweaks', # Widget Tweaks for Liquid Templates
     'static_pages',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -119,3 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Stripe Tokens
+# https://stripe.com/docs
+
+
+STRIPEAPI_TEST_PUBLIC_KEY = 'pk_test_LGQG2Oh4lJiu70FtJYZaVqai'
+STRIPEAPI_TEST_PRIVATE_KEY = 'sk_test_i6JoEDn9zusDrQMQ9ToLQxAM'
