@@ -16,7 +16,7 @@
   <nav class="navbar navbar-full navbar-light">
     <ul class="nav navbar-nav">
       <li class="nav-item"><a href="/" class="nav-link">HOME</a></li>
-       <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+       <li class="nav-item"><a href="" data-toggle="modal" data-target="#contactForm" class="nav-link">CONTACT</a></li>
       <li class="nav-item"><a href="https://zacharysohovich.github.io/" class="nav-link">BLOG</a></li>
     </ul>
   </nav>
@@ -24,10 +24,16 @@
   {% block content %}
   {% endblock %}
   <!-- FOOTER -->
+  <hr>
+  <footer class="text-xs-center">
+    <p>Created with love using <a href="https://djangoproject.com/" class="text-muted">Django</a></p>
+    <p>Developed and Designed by <a href="" data-toggle="modal" data-target="#contactForm">Zachary E. Sohovich</a></p>
+  </footer>
   <!-- JS -->
   <script src="{% static 'js/jquery-3.1.1.min.js' %}" charset="utf-8"></script>
   <script src="{% static 'js/tether.min.js' %}" charset="utf-8"></script>
   <script src="{% static 'js/bootstrap.min.js' %}" charset="utf-8"></script>
+
   <!-- GOOGLE ANALYTICS -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -5,5 +5,5 @@ from . import views
 
 urlpatterns = [
   url(r'^$', views.home),
-  url(r'^stripepayment$', views.stripePayment),
+  url(r'^coffee$', views.coffee),
 ]

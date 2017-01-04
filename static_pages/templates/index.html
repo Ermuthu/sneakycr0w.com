@@ -28,8 +28,9 @@
           </div>
           <div class="card-block text-xs-center">
             <ul class="nav nav-inline social-icons">
-              <li class="nav-item"><a href="{{ ada.github }}" class="nav-link"><i class="fa fa-github"></i></a></li>
-              <li class="nav-item"><a href="{{ ada.twitter }}" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+              <li class="nav-item"><a href="https://github.com/zacharysohovich" class="nav-link"><i class="fa fa-github"></i></a></li>
+              <li class="nav-item"><a href="https://twitter.com/sneakycr0w" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+              <li class="nav-item"><a href="/contact" class="nav-link"><i class="fa fa-envelope fa-fw"></i></a></li>
             </ul>
           </div>
           <div class="card-block text-xs-center">
@@ -62,15 +63,16 @@
   </div>
 <!-- /PROJECTS -->
 <!-- MODALS -->
+  <!-- DONATION FORM -->
 <div class="modal fade" id="stripe-modal" tabindex="-1" role="dialog" aria-labelledby="modalStripeLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <form action="/stripepayment" method="POST" class="form-inline">
+        <form action="/coffee" method="POST" class="form-inline">
             {% csrf_token %}
             <div class="form-group">
               <label for="id_custom_amount">How many coffee's would you like to buy me? ($2 each):</label>
-              {{ form.custom_amount|add_class:"form-control" }}
+              {{ form_donation.coffee_amount|add_class:"form-control" }}
               <script
                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="pk_test_LGQG2Oh4lJiu70FtJYZaVqai"
@@ -80,6 +82,34 @@
                 data-currency="usd">
               </script>
             </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- CONTACT FORM -->
+<div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="modalStripeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="modal-body">
+        <form action="/" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="id_name">Name: </label>
+              {{ form_contact.name|add_class:"form-control" }}
+            <div class="form-group">
+              <label for="id_email">Email: </label>
+              {{ form_contact.email|add_class:"form-control"}}
+            </div>
+            <div class="form-group">
+              <label for="id_message">Message: </label>
+              {{ form_contact.message|add_class:"form-control"}}
+            </div>
+            {{ form_contact.captcha }}
+            <button class="btn btn-primary" type="submit" name="contact">Submit</button>
       </div>
       </form>
     </div>

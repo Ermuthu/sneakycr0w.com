@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'widget_tweaks', # Widget Tweaks for Liquid Templates
+    'widget_tweaks', # django-widgets:
+    'captcha', # django-recaptcha widget: https://github.com/praekelt/django-recaptcha
     'static_pages',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,6 +125,17 @@ STATIC_URL = '/static/'
 # Stripe Tokens
 # https://stripe.com/docs
 
-
 STRIPEAPI_TEST_PUBLIC_KEY = 'pk_test_LGQG2Oh4lJiu70FtJYZaVqai'
 STRIPEAPI_TEST_PRIVATE_KEY = 'sk_test_i6JoEDn9zusDrQMQ9ToLQxAM'
+
+# ReCaptcha settings
+# https://google.com/recaptcha
+
+# ACTUAL KEYS:
+# RECAPTCHA_PUBLIC_KEY = '6LfIiRAUAAAAAJvEGufTjJQSlQ25OorTt557wRJE'
+# RECAPTCHA_PRIVATE_KEY = '6LfIiRAUAAAAAOxvaSR-sbofRpMOo3BJUzNDktip'
+
+# Below are fake captcha keys for testing
+RECAPTCHA_PUBLIC_KEY = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+RECAPTCHA_PRIVATE_KEY = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
+NOCAPTCHA = True
