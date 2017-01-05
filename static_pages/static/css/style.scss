@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(254, 254, 254); // Did this so that the crow.jpg background would match. TODO: Make a png of Ada (crow.jpg)
+}
 .social-icons {
   li {
     a {
@@ -27,4 +30,9 @@
   &:hover {
     opacity: 1.0;
   }
+}
+img#crow {
+  // Reduced to 6% of original size
+  width: 254px;
+  height: 172px;
 }

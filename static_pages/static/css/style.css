@@ -1,3 +1,6 @@
+body {
+  background-color: #fefefe; }
+
 .social-icons li a {
   color: white; }
   .social-icons li a i {
@@ -19,5 +22,9 @@
   transition: opacity .25s ease-in-out; }
   .project-image:hover {
     opacity: 1.0; }
+
+img#crow {
+  width: 254px;
+  height: 172px; }
 
 /*# sourceMappingURL=style.css.map */
