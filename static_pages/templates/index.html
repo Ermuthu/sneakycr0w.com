@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-md-5">
         <div class="card">
-          <img src="{% static 'media/zach.jpg' %}" class="card-img-top img-fluid">
+          <img src="{% static 'media/zach.jpeg' %}" class="card-img-top img-fluid">
           <div class="card-block">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lacus rutrum, sodales urna vel, sodales justo.</p>
           </div>
@@ -56,6 +56,9 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <form action="/coffee" method="POST" class="form-inline">
             {% csrf_token %}
             <div class="form-group">
@@ -80,6 +83,9 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <h1>Contact Me</h1>
       </div>
       <div class="modal-body">

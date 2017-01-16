@@ -1,5 +1,5 @@
 body {
-  background-color: #fefefe; }
+  background-color: white; }
 
 .social-icons li a {
   color: white; }
@@ -26,5 +26,8 @@ body {
 img#crow {
   width: 254px;
   height: 172px; }
+
+.fa-heart {
+  color: #de104d; }
 
 /*# sourceMappingURL=style.css.map */
