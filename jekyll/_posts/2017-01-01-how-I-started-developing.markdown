@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I started developing
-date:   2017-01-01 14:58:53 -0800
+date:   2017-01-01
 categories: personal
 ---
 So, at the time I'm writing this, it's about midnight. I'm a bit tired, and I totally forgot that I mentioned I would make another post before I went to bed. But, this blog I'm going to stick by my promise to be active. Unfortunately, I can't write my whole about me section tonight, so this will have to suffice.
