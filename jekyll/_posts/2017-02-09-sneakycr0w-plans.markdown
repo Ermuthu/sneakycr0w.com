@@ -2,7 +2,7 @@
 layout: post
 title: Plans for sneakycr0w.com
 date: 2017-02-09
-categories: development personal
+categories: personal
 ---
 So sneakycr0w.com is going to be my personal website. I don't plan on using it much more than showing my project list, having a little blog/scribble area, and minor updates to my resume and what not.
 
