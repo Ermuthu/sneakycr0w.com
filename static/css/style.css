@@ -74,4 +74,7 @@ body {
   .nav-link.active {
     color: #11a609; }
 
+.row {
+  margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
