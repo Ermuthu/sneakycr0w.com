@@ -24,6 +24,9 @@ a {
 .nav-link {
   color: rgb(0, 0, 0) !important;
   text-align: center;
+  &:first-child {
+    margin-top: 5px;
+  }
   &:hover {
     color: rgb(66, 204, 81) !important;
   }

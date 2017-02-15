@@ -21,6 +21,8 @@ a {
 .nav-link {
   color: black !important;
   text-align: center; }
+  .nav-link:first-child {
+    margin-top: 5px; }
   .nav-link:hover {
     color: #42cc51 !important; }
   .nav-link.active {
