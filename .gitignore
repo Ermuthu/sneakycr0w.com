@@ -3,3 +3,4 @@ sneakycr0w/settings.py
 /projects/__pycache__
 keybase.txt
 .DS_STORE
+.sass-cache
