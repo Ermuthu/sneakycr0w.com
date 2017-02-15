@@ -8,54 +8,70 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-  <div class="header clearfix">
-    <nav>
-      <ul class="nav float-right">
-        <li class="nav-item">
-          <a class="nav-link active" href="/">home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects">projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/scribbles">scribbles</a>
-        </li>
-      </ul>
-      <h3 class="text-muted navbar-brand">
-        <img src="static/img/crow_full.jpg" class="rounded" alt="" width="50" height="50">
-        Zachary E. Sohovich
-      </h3>
-    </nav>
-  </div>
+  <nav class="navbar navbar-toggleable-md navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="static/img/crow_full.jpg" width="30" height="30" class="d-inline-block align-top rounded" alt="">
+      Zachary E. Sohovich
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">scribbles</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
     <div class="row">
-      <img src="static/img/zach_squared.jpg" class="img-fluid rounded mx-auto zach" alt="">
     </div>
   <br>
   <div class="row">
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-4 text-center">
+      <img src="static/img/zach_squared.jpg" class="img-fluid rounded zach" alt="">
+    </div>
+    <div class="col-lg-8 text-center text-sm-left">
       <h1>Full Stack Web Developer</h1>
-      <p>over 10 years of experience with websites and web applications</p>
-      <p>passionate drive and extensive expertise in many technologies</p>
+      <h1>&amp; Software Developer</h1>
+      <p>
+        Hey there, my name is Zach. I'm a software &amp; web developer with over 10 years of experience. I got my start while playing video games and developed
+        (see what I did there) an incredible passion for code and software. I have experience in many different languages and I actively work on several open-source projects. If you'd like to know more
+        about me head over to my <a href="/scribbles">scribbles</a> page or if you have an inquiry/question contact me via <a href="mailto:zach@sneakycr0w.com">email</a>.
+      </p>
     </div>
   </div>
   <hr>
-  <div class="row text-center">
+  <div class="row">
     <div class="col-md-4">
       <!-- Placeholder -->
     </div>
-    <div class="col-md-4">
-      <ul class="nav">
+    <div class="col-md-4 text-center">
+      <ul class="nav social">
         <li class="nav-item">
-          <a class="nav-link" href="mailto:zach@sneakycr0w.com">email</a>
+          <a class="nav-link" href="mailto:zach@sneakycr0w.com">
+            <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/sneakycr0w">twitter</a>
+          <a class="nav-link" href="https://twitter.com/sneakycr0w">
+            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a href="https://github.com/zacharysohovich" class="nav-link">github</a>
+          <a class="nav-link" href="https://github.com/zacharysohovich">
+            <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
     </div>
