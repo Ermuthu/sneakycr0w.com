@@ -1,7 +1,7 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #292929;
   background-color: white; }
 
@@ -11,7 +11,7 @@ a {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 50rem; } }
+    max-width: 56rem; } }
 .container-narrow > hr {
   margin: 2rem 0; }
 
@@ -36,5 +36,13 @@ a {
 
 ul.social {
   font-size: 1.5rem; }
+
+dl {
+  font-family: "Raleway", sans-serif; }
+  dl dd {
+    font-size: .9rem; }
+
+p {
+  font-family: "Raleway", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

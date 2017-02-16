@@ -1,8 +1,9 @@
-
+$ubuntu-font: 'Ubuntu', sans-serif;
+$raleway-font: 'Raleway', sans-serif;
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: $ubuntu-font;
   color: rgb(41, 41, 41);
   background-color: rgb(255, 255, 255);
 }
@@ -12,7 +13,7 @@ a {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 50rem;
+    max-width: 56rem;
   }
 }
 .container-narrow > hr {
@@ -45,4 +46,13 @@ ul {
   &.social {
     font-size: 1.5rem;
   }
+}
+dl {
+  font-family: $raleway-font;
+  dd {
+    font-size: .9rem;
+  }
+}
+p {
+  font-family: $raleway-font;
 }
