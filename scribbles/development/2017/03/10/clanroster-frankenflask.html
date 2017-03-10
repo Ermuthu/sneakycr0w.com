@@ -36,42 +36,35 @@
     </div>
   </nav>
   <div class="row">
-    <div class="home">
+    <p class="text-muted">
+  <
+  <a href="/scribbles/">/scribbles/</a>
+  >
+</p>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">clan-roster - FrankenFlask</h1>
+    <p class="post-meta"><time datetime="2017-03-10T00:00:00-08:00" itemprop="datePublished">Mar 10, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>So over the course of the past few months I’ve been working on a project now called clan-roster. It’s pretty simplistic, more for my knowledge reinforcement than for actually utility. Hence the time being invested into it.</p>
+
+<p>So, let’s start at the beginning of the year. We started the project using Django. But, that’s before I knew what <a href="https://flask.pocoo.org">Flask</a>. When I discovered Flask, I saw how beautifully simplistic it was. I was awestruck. So, I decided since my project didn’t seem that complicated it’d be silly to have it as a Django project and I switched over to Flask.</p>
+
+<p>This was a mistake. I realized that my project, while seemingly simple in essence, actually utilizes the majority of Django’s built-in features. I use the databasing, the ORM, the forms, the routes, etc. All of these are fairly easily achievable with Flask, but the problem is that with all the dependencies and plugins that I was using, my project became a FrankenFlask project (it was basically turning into Django).</p>
+
+<p>This has brought me to the conclusion that, instead of messing around with plugins and spending precious time setting those up, I am switching back to Django. I am going to start the project fresh. But, given that I actually know what I’m doing now and what I want the project to be (<strong>Note</strong>: Important for future projects), it should be quick to catch-up with where the Flask project was at.</p>
+
+<p>I branched the new django project into a <a href="https://github.com/zacharysohovich/clan-roster/tree/django">django branch</a>. Once it catches up to where the flask version was at I will merge branches.</p>
+
+<p>I’m also going to start playing around with SQL more. Starting off I’m going to install the SQL server on a separate deployment to practice connecting to non-local servers as well as practice server security.</p>
+
+  </div>
+
   
-
-
-  <ul class="post-list">
-    
-      <li>
-          <p>
-            <a class="post-link" href="/scribbles/development/2017/03/10/clanroster-frankenflask.html">clan-roster - FrankenFlask</a>
-            \ Mar 10, 2017
-          </p>
-      </li>
-    
-      <li>
-          <p>
-            <a class="post-link" href="/scribbles/development/2017/02/28/new-goals.html">New Development Goals</a>
-            \ Feb 28, 2017
-          </p>
-      </li>
-    
-      <li>
-          <p>
-            <a class="post-link" href="/scribbles/personal/2017/02/09/sneakycr0w-plans.html">Plans for sneakycr0w.com</a>
-            \ Feb 9, 2017
-          </p>
-      </li>
-    
-      <li>
-          <p>
-            <a class="post-link" href="/scribbles/personal/2017/01/01/how-I-started-developing.html">How I started developing</a>
-            \ Jan 1, 2017
-          </p>
-      </li>
-    
-  </ul>
-</div>
+</article>
 
   </div>
   <hr>
