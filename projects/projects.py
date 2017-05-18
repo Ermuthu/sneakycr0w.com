@@ -4,17 +4,17 @@
 # A py by Zachary E. Sohovich
 
 from flask import Flask, render_template
-from flask.ext.pymongo import PyMongo
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 mongo = PyMongo(app)
 
-@app.route('/', METHODS=['GET'])
+@app.route('/', methods=['GET'])
 def projects():
     # Return current collection/document of projects
     return render_template('index.html')
 
-@app.route('/add', METHODS=['POST'])
+@app.route('/add', methods=['POST'])
 def add_project():
     # Return form for adding a new project
     return redirect('/')
