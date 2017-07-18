@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SneakyCr0w - Personal Website of Zachary Sohovich</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://use.fontawesome.com/aad27e12bd.js"></script>
+  <script src="/holderjs/holder.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 animated slideInLeft text-center text-lg-left">
+        <h1 class="bounce">Hello!</h1>
+        <h4>My name is Zachary E. Sohovich</h4>
+        <a href=""><span id="test"></span></a>
+        <p>
+          I'm a Full Stack Web Developer from <strong>Portland, OR</strong>
+        </p>
+        <button class="btn btn-primary">EMAIL</button>
+        <button class="btn btn-primary">RESUME</button>
+      </div>
+      <div class="col-lg-2 animated slideInDown text-center text-lg-left">
+        <img class="rounded profile" src="./img/zach.jpg" alt="">
+      </div>
+      <div class="col-lg-5 animated slideInRight text-center text-lg-left">
+        <i class="fa fa-book fa-2x fa-fw animated infinite" data-toggle="tooltip" data-placement="bottom" title="Blog" aria-hidden="true"></i>
+        <i class="fa fa-github fa-2x fa-fw animated infinite" data-toggle="tooltip" data-placement="bottom" title="Github" aria-hidden="true"></i>
+        <i class="fa fa-dribbble fa-2x fa-fw animated infinite" data-toggle="tooltip" data-placement="bottom" title="Dribbble" aria-hidden="true"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="row animated fadeIn">
+      <div class="col-lg-12 text-center text-lg-left">
+        <h1>Projects</h1>
+      </div>
+      <div class="col-md-4 text-center text-lg-left">
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" data-src="holder.js/100px100" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Lotus</h4>
+                <p class="card-text">A member management system designed for video gaming communities</p>
+                <p class="card-text"><small class="text-muted">last updated <span id="lotusDate"></span></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-lg-left">
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" data-src="holder.js/100px100" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-lg-left">
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" data-src="holder.js/100px100" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+    $("i").hover(function() {
+        $(this).toggleClass("pulse");
+      },
+      function() {
+        $(this).toggleClass("pulse");
+      });
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    function lastCommit(apiURL, target) {
+      $.ajax({
+        url: apiURL,
+        type: 'GET',
+        success: function(data) {
+          dataArray = data;
+          let dataArrayDate = dataArray[0].commit.author.date;
+          let options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          }
+          formattedDate = (new Date(dataArrayDate)).toLocaleString('en-US', options);
+          $(target).html(formattedDate);
+        }
+      });
+    }
+    // Lotus - Last Commit
+    lastCommit('https://api.github.com/repos/zacharysohovich/lotus/commits', '#lotusDate', true);
+  </script>
+</body>
+
+</html>

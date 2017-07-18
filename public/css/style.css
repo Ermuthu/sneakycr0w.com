@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323");
+.profile {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px;
+  box-shadow: 0 0 1em #dadada; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin-top: 2%;
+  background-color: #fbfbfb;
+  color: #1c1c1c; }
+
+.fa {
+  cursor: pointer; }
+  .fa:hover {
+    transition: color 0.25s; }
+
+.fa-dribbble:hover {
+  color: #c814b6; }
+
+.fa-github:hover {
+  color: #747474; }
+
+.fa-book:hover {
+  color: #446ac7; }
+
+.btn {
+  border-radius: 2px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  box-shadow: 0 3px 0 #004ba3;
+  margin: 5px; }
+
+.card {
+  margin: 10px;
+  box-shadow: 0 0 1em #dadada; }
+
+/*# sourceMappingURL=style.css.map */

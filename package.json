@@ -1,0 +1,24 @@
+{
+  "name": "sneakycr0w.com",
+  "version": "1.0.0",
+  "description": "Personal website for Zachary E Sohovich",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharysohovich/sneakycr0w.com.git"
+  },
+  "author": "Zachary E Sohovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacharysohovich/sneakycr0w.com/issues"
+  },
+  "homepage": "https://github.com/zacharysohovich/sneakycr0w.com#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.15.3",
+    "holderjs": "^2.9.4"
+  }
+}
