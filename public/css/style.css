@@ -40,7 +40,7 @@ body {
   box-shadow: 0 0 1em #dadada;
   transition: 0.2s transform ease-in-out; }
   .card:hover {
-    transform: scale(1.2); }
+    transform: scale(1.05); }
 
 a i.fa {
   color: #1c1c1c; }
