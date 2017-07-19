@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || '2222';
 app.set('port', port);
 const server = http.createServer(app);
-server.listen(port, () => console.log(`Server is listening to a port, that Erin didn't pick on localhost:${port}`));
+server.listen(port, () => console.log(`Server is listening on localhost:${port}`));

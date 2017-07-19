@@ -3,7 +3,7 @@
   max-width: 150px;
   max-height: 150px;
   margin: 10px;
-  box-shadow: 0 0 1em #dadada; }
+  box-shadow: 0 0 2em #8e8e8e; }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -35,5 +35,8 @@ body {
 .card {
   margin: 10px;
   box-shadow: 0 0 1em #dadada; }
+
+a i.fa {
+  color: #1c1c1c; }
 
 /*# sourceMappingURL=style.css.map */
