@@ -25,6 +25,9 @@ body {
 .fa-book:hover {
   color: #446ac7; }
 
+.fa-bitcoin:hover {
+  color: #ebd40b; }
+
 .btn {
   border-radius: 2px;
   font-family: "Rubik", sans-serif;
@@ -34,7 +37,10 @@ body {
 
 .card {
   margin: 10px;
-  box-shadow: 0 0 1em #dadada; }
+  box-shadow: 0 0 1em #dadada;
+  transition: 0.2s transform ease-in-out; }
+  .card:hover {
+    transform: scale(1.2); }
 
 a i.fa {
   color: #1c1c1c; }

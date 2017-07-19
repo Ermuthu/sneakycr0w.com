@@ -43,7 +43,11 @@ body {
     color: rgb(68, 106, 199);
   }
 }
-
+.fa-bitcoin {
+  &:hover {
+    color: rgb(235, 212, 11);
+  }
+}
 .btn {
   border-radius: 2px;
   font-family: $rubik;
@@ -55,6 +59,10 @@ body {
 .card {
   margin: 10px;
   box-shadow: 0 0 1em rgb(218, 218, 218);
+  transition: 0.2s transform ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 a i.fa {
   color: rgb(28, 28, 28);
