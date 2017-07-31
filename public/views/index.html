@@ -50,6 +50,19 @@
           <div class="card-deck">
             <div class="card animated">
               <div class="card-block">
+                <h4 class="card-title"><a href="https://github.com/zacharysohovich/lotus">Cosmic Butterfly</a></h4>
+                <p class="card-text">A e-commerce website built with Angular, Express, Node, and MongoDB</p>
+                <p class="card-text"><small class="text-muted">last updated <span id="cosmicDate"></span></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-lg-left">
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card animated">
+              <div class="card-block">
                 <h4 class="card-title"><a href="https://github.com/zacharysohovich/lotus">Lotus</a></h4>
                 <p class="card-text">A member management system designed for video gaming communities</p>
                 <p class="card-text"><small class="text-muted">last updated <span id="lotusDate"></span></small></p>
@@ -116,8 +129,9 @@
       });
     }
     // Lotus - Last Commit
-    lastCommit('https://api.github.com/repos/zacharysohovich/lotus/commits', '#lotusDate', true);
-    lastCommit('https://api.github.com/repos/zacharysohovich/ghostchat/commits', '#ghostchatDate', true);
+    lastCommit('https://api.github.com/repos/zacharysohovich/lotus/commits', '#lotusDate', true); // Lotus Update
+    lastCommit('https://api.github.com/repos/zacharysohovich/ghostchat/commits', '#ghostchatDate', true); // Ghostchat Update
+    lastCommit('https://api.github.com/repos/zacharysohovich/cosmic-butterfly/commits', '#cosmicDate', true); // Cosmic Butterfly Update
     lastCommit('https://api.github.com/repos/zacharysohovich/sneakycr0w.com/commits', '#sneakycr0wDate', true);
   </script>
 </body>
