@@ -2,8 +2,7 @@
 .profile {
   max-width: 150px;
   max-height: 150px;
-  margin: 10px;
-  box-shadow: 0 0 2em #8e8e8e; }
+  margin: 10px; }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -29,11 +28,20 @@ body {
   color: #ebd40b; }
 
 .btn {
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  box-shadow: 0 3px 0 #004ba3;
+  background-color: #12b800;
+  border: #028e00;
+  box-shadow: 0 3px 0 #0b7f00;
   margin: 5px; }
+  .btn:hover {
+    background-color: #13d300;
+    cursor: pointer; }
+
+.discord-link img {
+  height: 50px;
+  width: 50px; }
 
 footer {
   bottom: 0;

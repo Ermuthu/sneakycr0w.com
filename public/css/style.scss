@@ -3,12 +3,12 @@ $quicksand: 'Quicksand', sans-serif;
 $nunito: 'Nunito', sans-serif;
 $pacifico: 'Pacifico', sans-serif;
 $rubik: 'Rubik', sans-serif;
-
+$discord-dimensions: 50px;
+// 
 .profile {
   max-width: 150px;
   max-height: 150px;
   margin: 10px;
-  box-shadow: 0 0 2em rgb(142, 142, 142);
 }
 
 body {
@@ -49,11 +49,23 @@ body {
   }
 }
 .btn {
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: $rubik;
   font-weight: 400;
-  box-shadow: 0 3px 0 rgb(0, 75, 163);
+  background-color: rgb(18, 184, 0);
+  border: rgb(2, 142, 0);
+  box-shadow: 0 3px 0 rgb(11, 127, 0);
   margin: 5px;
+  &:hover {
+    background-color: rgb(19, 211, 0);
+    cursor: pointer;
+  }
+}
+.discord-link {
+  img {
+    height: $discord-dimensions;
+    width: $discord-dimensions;
+  }
 }
 footer {
     bottom: 0;
