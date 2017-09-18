@@ -1,0 +1,47 @@
+{
+  "name": "sneakycr0w.com",
+  "version": "3.0.0",
+  "description": "Website built with React and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneakycr0w/sneakycr0w.com.git"
+  },
+  "keywords": [
+    "sneaky",
+    "cr0w",
+    "zachary",
+    "sohovich",
+    "developer",
+    "web"
+  ],
+  "author": "Zachary E Sohovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sneakycr0w/sneakycr0w.com/issues"
+  },
+  "homepage": "https://github.com/sneakycr0w/sneakycr0w.com#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "file-loader": "^0.11.2"
+  }
+}
