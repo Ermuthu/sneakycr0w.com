@@ -4,20 +4,14 @@
   "description": "Website built with React and Express",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js && node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakycr0w/sneakycr0w.com.git"
   },
-  "keywords": [
-    "sneaky",
-    "cr0w",
-    "zachary",
-    "sohovich",
-    "developer",
-    "web"
-  ],
+  "keywords": ["sneaky", "cr0w", "zachary", "sohovich", "developer", "web"],
   "author": "Zachary E Sohovich",
   "license": "MIT",
   "bugs": {
@@ -31,17 +25,23 @@
     "express": "^4.15.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "react-router-dom": "^4.2.2",
     "webpack": "^3.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
     "eslint": "^3.19.0",
     "eslint-config-google": "^0.9.1",
+    "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
-    "file-loader": "^0.11.2"
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "webpack-dev-server": "^2.8.2"
   }
 }
