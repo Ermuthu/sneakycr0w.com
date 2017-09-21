@@ -23,7 +23,26 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loaders: ["css-loader"]
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]"
+          }
+        }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: "html-loader",
+          options: {
+            attrs: [":data-src"]
+          }
+        }
       }
     ]
   }
