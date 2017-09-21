@@ -1,5 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import Contact from '../../contact/Contact.jsx';
+import About from '../../about/About.jsx';
 
 const Home = () => (
   <div>
@@ -7,29 +10,17 @@ const Home = () => (
   </div>
 );
 
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-);
-
-const Contact = () => (
-  <div>
-    <h2>Contact</h2>
-  </div>
-);
-
 const Navigation = () => (
   <Router>
     <div>
-      <ul>
-        <li>
+      <ul className="nav-list">
+        <li className="nav-item">
           <Link to="/">Portfolio</Link>
         </li>
-        <li>
+        <li className="nav-item">
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li className="nav-item">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
