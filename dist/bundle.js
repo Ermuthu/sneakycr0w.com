@@ -23867,8 +23867,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(8);
 
 var _react2 = _interopRequireDefault(_react);
@@ -23877,36 +23875,145 @@ var _reactRouterDom = __webpack_require__(205);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var Home = function Home() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "h2",
+      null,
+      "Home"
+    )
+  );
+};
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+var About = function About() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "h2",
+      null,
+      "About"
+    )
+  );
+};
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var Topic = function Topic(_ref) {
+  var match = _ref.match;
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "h3",
+      null,
+      match.params.topicId
+    )
+  );
+};
 
-var Navigation = function (_React$Component) {
-  _inherits(Navigation, _React$Component);
-
-  function Navigation() {
-    _classCallCheck(this, Navigation);
-
-    return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
-  }
-
-  _createClass(Navigation, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "h1",
+var Topics = function Topics(_ref2) {
+  var match = _ref2.match;
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "h2",
+      null,
+      "Topics"
+    ),
+    _react2.default.createElement(
+      "ul",
+      null,
+      _react2.default.createElement(
+        "li",
         null,
-        "Navigation!"
-      );
-    }
-  }]);
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: match.url + "/rendering" },
+          "Rendering with React"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: match.url + "/components" },
+          "Components"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: match.url + "/props-v-state" },
+          "Props v. State"
+        )
+      )
+    ),
+    _react2.default.createElement(_reactRouterDom.Route, { path: match.url + "/:topicId", component: Topic }),
+    _react2.default.createElement(_reactRouterDom.Route, {
+      exact: true,
+      path: match.url,
+      render: function render() {
+        return _react2.default.createElement(
+          "h3",
+          null,
+          "Please select a topic."
+        );
+      }
+    })
+  );
+};
 
-  return Navigation;
-}(_react2.default.Component);
-
-exports.default = Navigation;
+var BasicExample = function BasicExample() {
+  return _react2.default.createElement(
+    _reactRouterDom.BrowserRouter,
+    null,
+    _react2.default.createElement(
+      "div",
+      null,
+      _react2.default.createElement(
+        "ul",
+        null,
+        _react2.default.createElement(
+          "li",
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: "/" },
+            "Home"
+          )
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: "/about" },
+            "About"
+          )
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: "/topics" },
+            "Topics"
+          )
+        )
+      ),
+      _react2.default.createElement("hr", null),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: Home }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: "/about", component: About }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: "/topics", component: Topics })
+    )
+  );
+};
+exports.default = BasicExample;
 
 /***/ }),
 /* 205 */

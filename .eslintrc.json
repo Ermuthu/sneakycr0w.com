@@ -8,5 +8,6 @@
   },
   "rules": {
     "semi": 2
-  }
+  },
+  "plugins": ["react"]
 }
