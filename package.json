@@ -5,21 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js && node index.js",
-    "dev": "webpack-dev-server --hot --inline"
+    "start": "webpack -p --config webpack.config.js && node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakycr0w/sneakycr0w.com.git"
   },
-  "keywords": [
-    "sneaky",
-    "cr0w",
-    "zachary",
-    "sohovich",
-    "developer",
-    "web"
-  ],
+  "keywords": ["sneaky", "cr0w", "zachary", "sohovich", "developer", "web"],
   "author": "Zachary E Sohovich",
   "license": "MIT",
   "bugs": {
