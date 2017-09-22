@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/sneakycr0w/sneakycr0w.com.git"
   },
-  "keywords": ["sneaky", "cr0w", "zachary", "sohovich", "developer", "web"],
+  "keywords": [
+    "sneaky",
+    "cr0w",
+    "zachary",
+    "sohovich",
+    "developer",
+    "web"
+  ],
   "author": "Zachary E Sohovich",
   "license": "MIT",
   "bugs": {
@@ -28,6 +35,7 @@
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-prettier": "^2.3.1",
     "express": "^4.15.4",
+    "html-webpack-plugin": "^2.30.1",
     "prettier": "^1.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

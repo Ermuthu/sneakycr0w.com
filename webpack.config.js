@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: `${__dirname}/app`,
@@ -8,6 +7,12 @@ module.exports = {
     filename: 'bundle.js',
     path: `${__dirname}/dist`,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: `${__dirname}/app/index.html`,
+    }),
+  ],
   module: {
     loaders: [
       {
@@ -40,15 +45,6 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-          },
-        },
-      },
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            attrs: [':data-src'],
           },
         },
       },
