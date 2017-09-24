@@ -2,13 +2,27 @@
 <html>
 
 <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106948657-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106948657-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="Full Stack Web Developer and Software Engineer, sneakycr0w.com is the personal website of Zachary E. Sohovich">
   <meta name="keywords" content="zachary, evan, sohovich, e, full, stack, web, developer, website, software, engineer, bitcoin, node, javascript, dribbble, twitter, css3, html5, c++, java, sneaky, cr0w">
   <title>SneakyCr0w - Personal Website of Zachary Sohovich</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script src="https://use.fontawesome.com/aad27e12bd.js"></script>
@@ -96,20 +110,23 @@
       <a href="https://discord.gg/u7aqJP4" class="discord-link"><img src="./img/discord.png" alt=""></a>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
   <script>
-    $("i").hover(function() {
+    $("i").hover(function () {
         $(this).toggleClass("pulse");
       },
-      function() {
+      function () {
         $(this).toggleClass("pulse");
       });
-    $(function() {
+    $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
-    $(".fa-bitcoin").click(function() {
+    $(".fa-bitcoin").click(function () {
       $(".bitcoin-address").toggle();
       $(".bitcoin-address").toggleClass("bounceIn")
     });
@@ -118,7 +135,7 @@
       $.ajax({
         url: apiURL,
         type: 'GET',
-        success: function(data) {
+        success: function (data) {
           dataArray = data;
           let dataArrayDate = dataArray[0].commit.author.date;
           let options = {
