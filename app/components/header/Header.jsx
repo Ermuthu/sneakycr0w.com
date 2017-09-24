@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
 
 const Header = () => (
   <div>
-    <img className={css(styles.brandImage)} src={brandImage} alt="Ada Tesla - The SneakyCr0w" />
+    <a href="/">
+      <img className={css(styles.brandImage)} src={brandImage} alt="Ada Tesla - The SneakyCr0w" />
+    </a>
     <h3 className="brand-text">Full Stack Web Developer</h3>
     <Navigation />
   </div>
