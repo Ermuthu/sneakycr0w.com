@@ -5,20 +5,26 @@ import Contact from '../../contact/Contact.jsx';
 import About from '../../about/About.jsx';
 import Portfolio from '../../portfolio/Portfolio.jsx';
 
-import styles from './navigation.css';
+import './navigation.scss';
 
 const Navigation = () => (
   <Router>
     <div>
-      <ul className={styles.navList}>
-        <li className={styles.navItem}>
-          <Link to="/">Portfolio</Link>
+      <ul className="navList">
+        <li className="navItem">
+          <Link className="navLink" to="/">
+            Portfolio
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to="/about">About</Link>
+        <li className="navItem">
+          <Link className="navLink" to="/about">
+            About
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to="/contact">Contact</Link>
+        <li className="navItem">
+          <Link className="navLink" to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
 

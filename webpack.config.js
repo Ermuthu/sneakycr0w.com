@@ -29,13 +29,23 @@ module.exports = {
       },
       {
         test: /\.jsx$/,
-        exclude: /node_modules/,
+        exclude: /node_modules(?!\/webpack-dev-server)/,
         loaders: ['babel-loader'],
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
-        loader: 'style-loader',
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.css$/,
