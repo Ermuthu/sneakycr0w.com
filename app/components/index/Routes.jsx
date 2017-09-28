@@ -1,13 +1,12 @@
 import React from 'react';
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import Contact from '../../contact/Contact.jsx';
-import About from '../../about/About.jsx';
-import Portfolio from '../../portfolio/Portfolio.jsx';
+import Portfolio from '../portfolio/Portfolio.jsx';
+import Contact from '../contact/Contact.jsx';
+import About from '../about/About.jsx';
 
-import './navigation.scss';
-
-const Navigation = () => (
+const Routes = () => (
   <Router>
     <div className="navigation">
       <ul className="navList">
@@ -27,13 +26,12 @@ const Navigation = () => (
           </Link>
         </li>
       </ul>
-
-      <hr />
       <Route path="/" component={Portfolio} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <hr />
     </div>
   </Router>
 );
 
-export default Navigation;
+export default Routes;
