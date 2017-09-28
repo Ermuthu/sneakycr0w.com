@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import brandImage from '../../../images/brand.png';
 
@@ -10,23 +10,24 @@ const Header = () => (
     <a href="/">
       <img className="brandImage" src={brandImage} alt="Ada Tesla - The SneakyCr0w" />
     </a>
-    <h3 className="brand-text">Full Stack Web Developer</h3>
+    <h3 className="brandTitle">Zachary E Sohovich</h3>
+    <h4 className="brandText">Full Stack Web Developer</h4>
     <div className="navigation">
       <ul className="navList">
         <li className="navItem">
-          <Link className="navLink" to="/">
-            Portfolio
-          </Link>
+          <NavLink exact activeClassName="navLinkHome" className="navLink" to="/">
+            Home
+          </NavLink>
         </li>
         <li className="navItem">
-          <Link className="navLink" to="/about">
+          <NavLink activeClassName="navLinkAbout" className="navLink" to="/about">
             About
-          </Link>
+          </NavLink>
         </li>
         <li className="navItem">
-          <Link className="navLink" to="/contact">
+          <NavLink activeClassName="navLinkContact" className="navLink" to="/contact">
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

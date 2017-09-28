@@ -2,8 +2,50 @@
   width: 100px;
   height: 100px;
 }
+
 .header {
   width: 512px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  img.brandImage {
+    clip-path: circle(50px at center);
+  }
+  .brandTitle {
+    text-transform: uppercase;
+  }
+  .brandText {
+    font-style: italic;
+    font-weight: lighter;
+    color: #a7a7a7;
+  }
+}
+
+.navList {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  li.navItem {
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    a.navLink {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      text-transform: lowercase;
+      font-weight: 600;
+      &.navLinkHome {
+        border-bottom: 2px solid #ff5964;
+      }
+      &.navLinkAbout {
+        border-bottom: 2px solid #35a7ff;
+      }
+      &.navLinkContact {
+        border-bottom: 2px solid #44ff79;
+      }
+    }
+  }
 }
