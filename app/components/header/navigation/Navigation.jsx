@@ -9,7 +9,7 @@ import './navigation.scss';
 
 const Navigation = () => (
   <Router>
-    <div>
+    <div className="navigation">
       <ul className="navList">
         <li className="navItem">
           <Link className="navLink" to="/">
@@ -29,8 +29,7 @@ const Navigation = () => (
       </ul>
 
       <hr />
-
-      <Route exact path="/" component={Portfolio} />
+      <Route path="/" component={Portfolio} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
     </div>
