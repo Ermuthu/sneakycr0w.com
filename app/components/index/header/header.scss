@@ -35,16 +35,23 @@
       text-align: center;
       text-decoration: none;
       color: black;
+      opacity: 0.65;
       text-transform: lowercase;
       font-weight: 600;
+      &:hover {
+        opacity: 1;
+      }
       &.navLinkHome {
         border-bottom: 2px solid #ff5964;
+        opacity: 1;
       }
       &.navLinkAbout {
         border-bottom: 2px solid #35a7ff;
+        opacity: 1;
       }
       &.navLinkContact {
         border-bottom: 2px solid #44ff79;
+        opacity: 1;
       }
     }
   }

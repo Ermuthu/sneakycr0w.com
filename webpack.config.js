@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -18,7 +19,7 @@ module.exports = {
         NODE_ENV: JSON.stringify('production'),
       },
     }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new MinifyPlugin(),
   ],
   module: {
     loaders: [
