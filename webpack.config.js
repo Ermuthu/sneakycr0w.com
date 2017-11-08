@@ -3,7 +3,7 @@ const MinifyPlugin = require('babel-minify-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  context: `${__dirname}/app`,
+  context: `${__dirname}/src`,
   entry: './App.jsx',
   output: {
     filename: 'bundle.js',
@@ -12,7 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: `${__dirname}/app/index.html`,
+      template: `${__dirname}/src/index.html`,
     }),
     new webpack.DefinePlugin({
       'process.env': {
