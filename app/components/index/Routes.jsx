@@ -7,8 +7,6 @@ import Contact from '../contact/Contact.jsx';
 import About from '../about/About.jsx';
 import NotFound from '../error-pages/404.jsx';
 
-import './index.scss';
-
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Portfolio} />

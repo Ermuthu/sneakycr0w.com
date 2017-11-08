@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/sneakycr0w/sneakycr0w.com#readme",
   "dependencies": {
-    "aphrodite": "^1.2.4",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
