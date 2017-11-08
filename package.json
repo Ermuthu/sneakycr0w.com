@@ -13,7 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/sneakycr0w/sneakycr0w.com.git"
   },
-  "keywords": ["sneaky", "cr0w", "zachary", "sohovich", "developer", "web"],
+  "keywords": [
+    "sneaky",
+    "cr0w",
+    "zachary",
+    "sohovich",
+    "developer",
+    "web"
+  ],
   "author": "Zachary E Sohovich",
   "license": "MIT",
   "bugs": {
