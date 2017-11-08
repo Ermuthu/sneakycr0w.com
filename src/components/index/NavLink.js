@@ -19,7 +19,7 @@ const NavLink = ({ label, to, exact, icon }) => (
 NavLink.propTypes = {
   label: propTypes.String.isRequired,
   to: propTypes.String.isRequired,
-  exact: propTypes.Boolean.isRequired,
+  exact: propTypes.Boolean,
   icon: propTypes.String.isRequired,
 };
 
