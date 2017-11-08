@@ -1,8 +1,9 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
+
 import NavigationDrawer from 'react-md/lib/NavigationDrawers';
 import NavLink from './NavLink';
-import propTypes from 'prop-types';
 
 import Home from '../portfolio/Portfolio.jsx';
 import About from '../about/About.jsx';
