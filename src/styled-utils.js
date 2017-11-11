@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
@@ -16,7 +16,9 @@ export const Header = styled.header`
   height: 75px;
   background-color: #202020;
 `;
-export const Logo = styled.img`height: 75px;`;
+export const Logo = styled.img`
+  height: 75px;
+`;
 
 export const NavItem = styled.a`
   text-decoration: none;

@@ -1,10 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
-import { injectGlobal } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { injectGlobal } from 'styled-components';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
 injectGlobal`
