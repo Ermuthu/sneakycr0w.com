@@ -50,7 +50,7 @@ export const Logo = styled.img`
   height: 75px;
 `;
 
-export const Main = styled.div`
+export const MainContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-content: stretch;
