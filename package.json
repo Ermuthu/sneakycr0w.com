@@ -6,7 +6,8 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-scripts": "1.0.17",
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.2.3",
+    "stylelint": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
