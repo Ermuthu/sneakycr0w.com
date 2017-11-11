@@ -5,7 +5,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Open Sans'],
+    families: ['Open Sans', 'Barlow Condensed'],
   },
 });
 const Card = styled.div`
@@ -28,8 +28,12 @@ const CardHeader = styled.div`
   justify-content: center;
   min-height: 100px;
   text-align: center;
-  background-color: red;
+  background-color: #5bba49;
+  color: #1e2326;
   width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
   h1 {
     display: block;
   }
@@ -43,6 +47,7 @@ const CardFooter = styled.div`
   font-weight: normal;
   font-style: italic;
   padding: 5px;
+  font-size: 0.75em;
 `;
 const UserCard = ({ name, description, lastCommit }) => (
   <Card>
