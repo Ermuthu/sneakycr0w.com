@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import UserCard from './UserCard';
-import { Main } from './styled-utils';
+import { MainContainer } from './styled-utils';
 
 class Home extends Component {
   constructor() {
@@ -24,7 +24,7 @@ class Home extends Component {
     // const currentProjects = ['sneakycr0w.com', 'lotus'];
     const currentProjects = 'all';
     return (
-      <Main>
+      <MainContainer>
         {this.state.repos.map(repo => {
           if (currentProjects.includes(repo.name) || currentProjects === 'all') {
             const updatedAt = new Date(repo.updated_at);
@@ -39,7 +39,7 @@ class Home extends Component {
           }
           return console.log(`${repo.name} was not in current projects`);
         })}
-      </Main>
+      </MainContainer>
     );
   }
 }
