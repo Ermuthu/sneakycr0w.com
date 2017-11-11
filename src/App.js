@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import UserCard from './UserCard';
+
 import logo from './logo.svg';
 import { Container, Header, Main, Logo, NavItem } from './styled-utils';
 
@@ -27,7 +29,11 @@ class App extends Component {
           <NavItem href="/about">About</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </Header>
-        <Main />
+        <Main>
+          {this.state.repos.map(repo => (
+            <UserCard name={repo.name} description={repo.description} lastCommit={repo.updated_at} />
+          ))}
+        </Main>
       </Container>
     );
   }
