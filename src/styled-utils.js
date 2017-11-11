@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Roboto', 'Open Sans'],
+  },
+});
 
 export const Container = styled.div`
   display: grid;
@@ -6,7 +13,7 @@ export const Container = styled.div`
   grid-template-rows: 75px auto 1fr;
   grid-gap: 10px;
   height: 100vh;
-  background-color: #1e2326;
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const Navigation = styled.header`
@@ -28,6 +35,9 @@ export const NavItem = styled.a`
   letter-spacing: 1px;
   align-self: center;
   margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0 5px 2px #15191b;
+  transition: color 0.25s;
   &:hover {
     color: #5bba49;
   }

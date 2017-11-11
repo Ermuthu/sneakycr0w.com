@@ -1,34 +1,60 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
+import WebFont from 'webfontloader';
 
+WebFont.load({
+  google: {
+    families: ['Open Sans'],
+  },
+});
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
-  border-radius: 6px;
   flex-basis: 200px;
   margin: 5px;
   flex-grow: 1;
-  background-color: #f2f2f2;
   align-items: flex-start;
-  h3 {
-    padding: 5px;
-    border-bottom: 1px solid grey;
-    text-align: center;
+  box-shadow: 0 4px 2px -2px;
+  background-color: #efefef;
+  font-family: 'Roboto', sans-serif;
+  min-height: 250px;
+`;
+
+const CardHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  text-align: center;
+  background-color: red;
+  width: 100%;
+  h1 {
+    display: block;
   }
-  h4 {
-    padding: 5px;
-  }
-  p {
-    padding: 5px;
-  }
+`;
+
+const CardBody = styled.div`
+  padding: 5px;
+`;
+const CardFooter = styled.div`
+  margin-top: auto;
+  font-weight: normal;
+  font-style: italic;
+  padding: 5px;
 `;
 const UserCard = ({ name, description, lastCommit }) => (
   <Card>
-    <h3>{name}</h3>
-    <h4>{description}</h4>
-    <p>{lastCommit}</p>
+    <CardHeader>
+      <h3>{name}</h3>
+    </CardHeader>
+    <CardBody>
+      <p>{description}</p>
+    </CardBody>
+    <CardFooter>
+      <p>updated at: {lastCommit}</p>
+    </CardFooter>
   </Card>
 );
 

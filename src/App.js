@@ -37,8 +37,14 @@ class App extends Component {
         <Main>
           {this.state.repos.map(repo => {
             if (currentProjects.includes(repo.name) || currentProjects === 'all') {
+              const updatedAt = new Date(repo.updated_at);
               return (
-                <UserCard key={repo.id} name={repo.name} description={repo.description} lastCommit={repo.updated_at} />
+                <UserCard
+                  key={repo.id}
+                  name={repo.name}
+                  description={repo.description}
+                  lastCommit={updatedAt.toDateString()}
+                />
               );
             }
             return console.log(`${repo.name} was not in current projects`);
