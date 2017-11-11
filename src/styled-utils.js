@@ -33,5 +33,5 @@ export const Main = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   grid-column: span 4;
-  margin: 10%;
+  margin: 5%;
 `;
