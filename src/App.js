@@ -4,7 +4,7 @@ import axios from 'axios';
 import UserCard from './UserCard';
 
 import logo from './logo.svg';
-import { Container, Header, Main, Logo, NavItem } from './styled-utils';
+import { Container, Navigation, NavItem, Header, Logo, Main } from './styled-utils';
 
 class App extends Component {
   constructor() {
@@ -21,18 +21,28 @@ class App extends Component {
     });
   }
   render() {
+    // const currentProjects = ['sneakycr0w.com', 'lotus'];
+    const currentProjects = 'all';
     return (
       <Container>
-        <Header>
-          <Logo src={logo} alt="Atomic Crow" />
+        <Navigation>
           <NavItem href="/home">Home</NavItem>
           <NavItem href="/about">About</NavItem>
           <NavItem href="/contact">Contact</NavItem>
+        </Navigation>
+        <Header>
+          <Logo src={logo} alt="Atomic Crow" />
         </Header>
+
         <Main>
-          {this.state.repos.map(repo => (
-            <UserCard name={repo.name} description={repo.description} lastCommit={repo.updated_at} />
-          ))}
+          {this.state.repos.map(repo => {
+            if (currentProjects.includes(repo.name) || currentProjects === 'all') {
+              return (
+                <UserCard key={repo.id} name={repo.name} description={repo.description} lastCommit={repo.updated_at} />
+              );
+            }
+            return console.log(`${repo.name} was not in current projects`);
+          })}
         </Main>
       </Container>
     );

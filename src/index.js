@@ -11,6 +11,7 @@ WebFont.load({
     families: ['Roboto'],
   },
 });
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -18,7 +19,7 @@ injectGlobal`
     * {
         margin: 0;
         padding: 0;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
     }
     body {
         background-color: paperwhite;
