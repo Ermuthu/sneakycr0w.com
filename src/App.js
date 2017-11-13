@@ -55,16 +55,6 @@ const Logo = styled.img`
   height: 75px;
 `;
 
-const MainContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-content: stretch;
-  flex-wrap: wrap;
-  grid-row-start: 3;
-  grid-column: span 4;
-  margin: 5px;
-`;
-
 const App = () => (
   <Container>
     <Navigation>

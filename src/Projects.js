@@ -2,9 +2,19 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
 
 import UserCard from './modules/UserCard';
-import { MainContainer } from './styled-utils';
+
+const Container = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: wrap;
+  grid-row-start: 3;
+  grid-column: span 4;
+  margin: 5px;
+`;
 
 class Projects extends Component {
   constructor() {
@@ -24,7 +34,7 @@ class Projects extends Component {
     // const currentProjects = ['sneakycr0w.com', 'lotus'];
     const currentProjects = 'all';
     return (
-      <MainContainer>
+      <Container>
         {this.state.repos.map(repo => {
           if (currentProjects.includes(repo.name) || currentProjects === 'all') {
             const updatedAt = new Date(repo.updated_at);
@@ -39,7 +49,7 @@ class Projects extends Component {
           }
           return console.log(`${repo.name} was not in current projects`);
         })}
-      </MainContainer>
+      </Container>
     );
   }
 }
