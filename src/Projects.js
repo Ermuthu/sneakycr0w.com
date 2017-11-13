@@ -6,6 +6,16 @@ import styled from 'styled-components';
 
 import UserCard from './modules/UserCard';
 
+const Container = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: wrap;
+  grid-row-start: 3;
+  grid-column: span 4;
+  margin: 5px;
+`;
+
 class Projects extends Component {
   constructor() {
     super();
@@ -43,15 +53,5 @@ class Projects extends Component {
     );
   }
 }
-
-const Container = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-content: stretch;
-  flex-wrap: wrap;
-  grid-row-start: 4;
-  grid-column: span 4;
-  margin: 5px;
-`;
 
 export default Projects;

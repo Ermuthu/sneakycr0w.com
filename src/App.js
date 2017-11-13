@@ -5,23 +5,6 @@ import WebFont from 'webfontloader';
 import Projects from './Projects';
 import Profile from './Profile';
 
-import logo from './logo.svg';
-
-const App = () => (
-  <Container>
-    <Navigation>
-      <NavItem href="/home">Projects</NavItem>
-      <NavItem href="/about">About</NavItem>
-      <NavItem href="/contact">Contact</NavItem>
-    </Navigation>
-    <Header>
-      <Logo src={logo} alt="Atomic Crow" />
-    </Header>
-    <Profile />
-    <Projects />
-  </Container>
-);
-
 // Styled Components
 
 WebFont.load({
@@ -33,7 +16,7 @@ WebFont.load({
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 75px auto auto 1fr;
+  grid-template-rows: 75px auto 1fr;
   grid-gap: 10px;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -66,11 +49,16 @@ const NavItem = styled.a`
   }
 `;
 
-const Header = styled.div`
-  grid-row-start: 2;
-`;
-const Logo = styled.img`
-  height: 75px;
-`;
+const App = () => (
+  <Container>
+    <Navigation>
+      <NavItem href="/home">Projects</NavItem>
+      <NavItem href="/about">About</NavItem>
+      <NavItem href="/contact">Contact</NavItem>
+    </Navigation>
+    <Profile />
+    <Projects />
+  </Container>
+);
 
 export default App;
