@@ -3,10 +3,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import UserCard from './UserCard';
+import UserCard from './modules/UserCard';
 import { MainContainer } from './styled-utils';
 
-class Home extends Component {
+class Projects extends Component {
   constructor() {
     super();
     this.state = {
@@ -44,4 +44,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Projects;
