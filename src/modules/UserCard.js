@@ -3,11 +3,34 @@ import propTypes from 'prop-types';
 import styled from 'styled-components';
 import WebFont from 'webfontloader';
 
+const UserCard = ({ name, description, lastCommit }) => (
+  <Card>
+    <CardHeader>
+      <h3>{name}</h3>
+    </CardHeader>
+    <CardBody>
+      <p>{description}</p>
+    </CardBody>
+    <CardFooter>
+      <p>updated at: {lastCommit}</p>
+    </CardFooter>
+  </Card>
+);
+
+UserCard.propTypes = {
+  name: propTypes.string.isRequired,
+  description: propTypes.string.isRequired,
+  lastCommit: propTypes.string.isRequired,
+};
+
+// Styled Components
+
 WebFont.load({
   google: {
     families: ['Open Sans', 'Barlow Condensed'],
   },
 });
+
 const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,24 +72,5 @@ const CardFooter = styled.div`
   padding: 5px;
   font-size: 0.75em;
 `;
-const UserCard = ({ name, description, lastCommit }) => (
-  <Card>
-    <CardHeader>
-      <h3>{name}</h3>
-    </CardHeader>
-    <CardBody>
-      <p>{description}</p>
-    </CardBody>
-    <CardFooter>
-      <p>updated at: {lastCommit}</p>
-    </CardFooter>
-  </Card>
-);
-
-UserCard.propTypes = {
-  name: propTypes.string.isRequired,
-  description: propTypes.string.isRequired,
-  lastCommit: propTypes.string.isRequired,
-};
 
 export default UserCard;
