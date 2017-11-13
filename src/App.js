@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import WebFont from 'webfontloader';
 
 import Projects from './Projects';
+import Profile from './Profile';
 
 import logo from './logo.svg';
 
@@ -16,6 +17,7 @@ const App = () => (
     <Header>
       <Logo src={logo} alt="Atomic Crow" />
     </Header>
+    <Profile />
     <Projects />
   </Container>
 );
@@ -31,7 +33,7 @@ WebFont.load({
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 75px auto 1fr;
+  grid-template-rows: 75px auto auto 1fr;
   grid-gap: 10px;
   height: 100vh;
   font-family: 'Roboto', sans-serif;

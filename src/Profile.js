@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-class Profile extends Component {
-  constructor() {
-    super();
-    this.state = {
-      twitter: 'sneakycr0w',
-      instagram: 'sneakycr0w',
-    };
+const Container = styled.div`
+  color: white;
+  grid-row-start: 3;
+  margin: 5%;
+  a {
+    color: white;
   }
-  render() {
-    return <p>Profile page works</p>;
-  }
-}
+`;
+const Profile = () => (
+  <Container>
+    <h1>About Me</h1>
+    <p>
+      <a href="https://twitter.com/sneakycr0w">Twitter</a>
+    </p>
+  </Container>
+);
 
 export default Profile;
