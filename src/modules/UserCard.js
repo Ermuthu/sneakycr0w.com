@@ -64,7 +64,9 @@ const CardHeader = styled.div`
 
 const CardBody = styled.div`
   padding: 5px;
+  color: black;
 `;
+
 const CardFooter = styled.div`
   margin-top: auto;
   font-weight: normal;
